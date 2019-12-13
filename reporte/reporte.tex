@@ -1,4 +1,4 @@
-\documentclass[12pt, letterpaper]{article}
+\documentclass[12pt,twocolumn, letterpaper]{article}
 \usepackage[colorlinks=true,linkcolor=black,citecolor=blue,filecolor=cyan,pagecolor=blue]{hyperref} 
 \usepackage[toc,style=altlistgroup,hyperfirst=false]{glossaries}
 \usepackage[utf8]{inputenc} %para poder escribir símbolos no anglosajones 
@@ -18,92 +18,30 @@
 \parindent=5mm
 \graphicspath{{images/}}
 \usepackage{etoolbox}
-\let\bbordermatrix\bordermatrix
-%\patchcmd{\bbordermatrix}{8.75}{4.75}{}{}
-%\patchcmd{\bbordermatrix}{\left(}{\left[}{}{}
-%\patchcmd{\bbordermatrix}{\right)}{\right]}{}{}
-%%%%glosario
-\makeindex
-%\makeglossaries
-%\input{./glosario.tex}
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%NOTA IMPORTANTE:
-%%Para relacionar el glosario.tex con este archivo
-%%Es necesario abrir la terminal (Simbolo del sistema en windows)
-%%Ir a la carpeta contenedora y escribir el siguiente comando:
-%%makeindex -s PROYECTO_final.ist -t PROYECTO_final.glg -o PROYECTO_final.gls PROYECTO_final.glo
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\documentclass{aa}  
 
-%%%% inicio del documento
+%
+\usepackage{graphicx}
+%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{txfonts}
 \begin{document}
 
-\thispagestyle{empty}
 
-%%%%%%% portada
 
-\thispagestyle{empty}
+   \title{Machine Translation para lenguajes con pocos recursos.}
+   	\author{Ricardo Cruz Sánchez\\
+   	Rolando Corona Jiménez
+   	}
+   \maketitle
+%
+%-------------------------------------------------------------------
 
-\begin{minipage}[c][0.1\textheight][c]{0.2\textwidth}
-\begin{center}
-    \includegraphics[width=4cm, height=4cm]{cimat}
-\end{center}
-\end{minipage}
-\begin{minipage}[c][0.1\textheight][t]{0.8\textwidth}
-\begin{center}
-    {\hspace{2cm}\scshape Centro de Investigación en Matemáticas}
-    \vspace{-.5cm}
-\end{center}
-\hspace*{1.0cm} \rule[0mm]{0.9\textwidth}{0.8mm}
-\hspace*{1.17cm}   \rule[4mm]{0.9\textwidth}{0.1mm}
-    \vspace{-1cm}
-\begin{center}
-    { \hspace{2cm}\scshape  Unidad Monterrey}
-\end{center}
-\end{minipage}
 
-\begin{minipage}[c][0.6\textheight][t]{0.2\textwidth}
-\begin{center}
-\hskip2pt
-\vrule width2.5pt height10cm
-        \hskip1mm
-        \vrule width1pt height10cm \\ \vspace{2cm}
-        \includegraphics[height=4.5cm]{mty}
-        \end{center}
-\end{minipage}
-\begin{minipage}[c][0.9\textheight][t]{0.65\textwidth}
-  \begin{center}
 
-	
-    \vspace{3.2cm}
-    
-%%%% TITULO EN PORTADA
 
-  \scshape Proyecto final.\\ \normalsize
-  
-  \vspace{2cm}  
-  
-    
-            
-    Temas selectos de ciencia de datos\\
-    \vspace{1cm}   
-    Machine Translation para lenguajes con pocos recursos.\\
-    \vspace{1cm}   
-    \vspace{1cm}   
-    Ricardo Cruz Sánchez\\
-    Rolando Corona Jiménez
-    \vspace{.5cm}   
-  \end{center}
-  
-\end{minipage}
-
-%TABLA DE INDICES
-\pagebreak
-\tableofcontents
-
-\cleardoublepage
 %INTRODUCCIÓN
-\pagebreak
 \section{Introducción.}
 Una de las tareas más relevantes en el procesamiento del lenguaje natural (NLP) es la traducción automática o machine translation (MT), la cual consiste en poder traducir textos de una lengua (origen) a otro idioma (objetivo) a través de software especializado.\\
 
@@ -127,8 +65,6 @@ Existen diversas alternativas para la solución de esta problemática, que van d
 
 Este documento centrará la atención en el uso de \emph{transfer learning} como posible solución a la traducción automática con pocos recursos y se ejemplificará con un caso de estudio para facilitar el entendimiento del tema.
 
-
-\pagebreak
 \section{Machine Translation.}
 Neural machine translation (NMT) es el estado del arte en tareas de traducción, ha sido ampliamente estudiado y muestra un gran desempeño cuando se posee un número considerable de recursos.\\
 
@@ -136,7 +72,7 @@ La estructura principal en esta rama de NLP se conoce como encoder-decoder. La f
 
 \begin{figure}[h]
 \centering
-\includegraphics[scale=.5]{images/Encoder-Decoder-Architecture-for-Neural-Machine-Translation.png} 
+\includegraphics[scale=.25]{images/Encoder-Decoder-Architecture-for-Neural-Machine-Translation.png} 
 \label{e-d}
 \caption{Modelo encoder-decoder attention.}
 \end{figure}
@@ -163,6 +99,7 @@ Las alternativas más conocidas son:
 \item \textbf{Zero shot} Es un enfoque similar al pivoteo, pero en lugar de pasar por la pseudo-traducción con el idioma pivote intermedio, solo ocupa el idioma para generar un corpus extenso y poder realizar MT de manera \emph{directa}
 \item \textbf{Estudio más detallado de la lengua con pocos recursos:} En ocasiones se sugiere descomponer las frases en las formas más simples posibles, para así poder realizar una correspondencia efectiva entre el idioma origen y el objetivo. Esto puede mejorar la traducción pero requiere de mayor conocimiento del los lenguajes y de su propia naturaleza, tareas que corresponden directamente a lingüistas y traductores. 
 \item \textbf{Modificación de parámetros y capas:} En la actualidad, existen enfoque que pretenden mostrar que a diferencia de los anteriores, no es necesario recurrir a un idioma auxiliar, sino que, basta con modificar los parámetros de la estructura encoder-decoder para generar un traductor eficiente. Las estrategias incluyen considerar tamaños de batches pequeños, dropouts agresivos, regularización en las capas y tomar embeddings diferentes, como el node2vec.
+\item \textbf{Multilingual Neural Machine Translation:} MNMT es una alternativa en la cual se posee un corpus con más de un idioma, la idea general es poder realizar la traducción a cualquier lenguaje incluido en el corpus, haciendo más fácil la generalización al estar expuesto a múltiples idiomas, los cuales interactuan entre si para un aprendizaje de traducción eficiente.
 \end{itemize}
 
 En el presente trabajo se abordará solo transfer learning como posible solución a los problemas de bajos recursos. Las razones de esta elección se basan en la cantidad de información disponible para esta metodología, además de no requerir de algún especialista.\\
@@ -170,7 +107,18 @@ En el presente trabajo se abordará solo transfer learning como posible solució
 Información de cualquier otra metodología se puede encontrar en la red y en la bibiliografía recomendada.
 
 \section{Transfer learning}
+La idea intuitiva del transfer learning se muestra en la figura \ref{transfer}, donde el nodo HR representa el modelo con suficientes recursos y LR el de pocos recursos.\\
 
+Primero se entrena el modelo HR, el modelo padre y el modelo con pocos recursos, modelo hijo, se inicializa con algunos de los parámetros del modelo padre.\\
+
+La idea detrás de este enfoque es que el tener pocos recursos para realizar el MT se compensa al asignar una distribución a priori de los parámetros, con la que se espera una convergencia más eficaz\\
+
+\begin{figure}
+\centering
+\includegraphics[scale=.5]{images/transfer.png} 
+\caption{transfer learning}
+\label{transfer}
+\end{figure}
 
 \section{Descripción del conjunto de datos.}
 
@@ -180,17 +128,32 @@ Información de cualquier otra metodología se puede encontrar en la red y en la
 
 \begin{thebibliography}{1}
 
-\bibitem{cr98}
-Lorrie Faith Cranor and Brian A. LaMacchia. 1998. Spam!. Commun. ACM 41, 8 (August 1998), 74-83. 
+\bibitem{1}
+Sennrich, R., \& Zhang, B. (2019). Revisiting Low-Resource Neural Machine Translation: A Case Study. arXiv preprint arXiv:1905.11901.
 
-\bibitem{fe19}
-Emilio Ferrara. 2019. The history of digital spam. Commun. ACM 62, 8 (July 2019), 82-91. 
+\bibitem{2}
+Zoph, B., Yuret, D., May, J., \& Knight, K. (2016). Transfer learning for low-resource neural machine translation. arXiv preprint arXiv:1604.02201.
 
-\bibitem{ha01}
-Hastie, T., Tibshirani, R.,, Friedman, J. (2001). The Elements of Statistical Learning. New York, NY, USA: Springer New York Inc.. 
+\bibitem{3}
+Dabre, R., Chu, C., \& Kunchukuttan, A. (2019). A Survey of Multilingual Neural Machine Translation. arXiv preprint arXiv:1905.05395.
 
-\bibitem{so09}
-Marina Sokolova and Guy Lapalme. 2009. A systematic analysis of performance measures for classification tasks. Inf. Process. Manage. 45, 4 (July 2009), 427-437. 
+\bibitem{4}
+Verma, A. A., \& Bhattacharyya, P. Literature Survey: Neural Machine Translation.
+
+\bibitem{5}
+Gutierrez-Vasques, X., \& Mijangos, V. (2017). Low-resource bilingual lexicon extraction using graph based word embeddings. arXiv preprint arXiv:1710.02569.
+
+\bibitem{6}
+Gutierrez-Vasques, X. (2015, June). Bilingual lexicon extraction for a distant language pair using a small parallel corpus. In Proceedings of the 2015 Conference of the North American Chapter of the Association for Computational Linguistics: Student Research Workshop (pp. 154-160).
+
+\bibitem{7}
+Hois, J. M. M., Romero, C. B., \& Ruiz, I. V. M. (2016). Traductor estadístico wixarika-español usando descomposición morfológica.
+
+\bibitem{8}
+Gutierrez-Vasques, X., Medina-Urrea, A., \& Sierra, G. (2019). Morphological segmentation for extracting Spanish-Nahuatl bilingual lexicon. Procesamiento del Lenguaje Natural, 63, 41-48.
+
+\bibitem{9}
+Mager, M., Carrillo, D., Meza, I., \& y en Sistemas, M. A. WixNLP: Probabilistic Finite-State morphological analyzer for Wixarika.
 
 \end{thebibliography}
 

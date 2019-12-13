@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/W32TeX) (preloaded format=pdflatex 2016.9.16)  12 DEC 2019 21:02
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/W32TeX) (preloaded format=pdflatex 2016.9.16)  13 DEC 2019 02:06
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -799,6 +799,11 @@ Package: cite 2015/02/27  v 5.5
 (c:/texlive/2016/texmf-dist/tex/latex/tools/multicol.sty
 Package: multicol 2016/04/07 v1.8p multicolumn formatting (FMi)
 \c@tracingmulticols=\count145
+
+
+Package multicol Warning: May not work with the twocolumn option on input line 
+134.
+
 \mult@box=\box35
 \multicol@leftmargin=\dimen140
 \c@unbalance=\count146
@@ -844,8 +849,7 @@ Package: multicol 2016/04/07 v1.8p multicolumn formatting (FMi)
 \mult@nat@firstbox=\box59
 \colbreak@box=\box60
 \mc@col@check@num=\count153
-)
-(c:/texlive/2016/texmf-dist/tex/latex/multirow/multirow.sty
+) (c:/texlive/2016/texmf-dist/tex/latex/multirow/multirow.sty
 \bigstrutjot=\dimen149
 )
 (c:/texlive/2016/texmf-dist/tex/latex/tools/bm.sty
@@ -878,34 +882,138 @@ Package: geometry 2010/09/12 v5.6 Page Geometry
 \Gm@layoutvoffset=\dimen157
 \Gm@dimlist=\toks36
 )
-\@indexfile=\write3
-\openout3 = `reporte.idx'.
-
-
-Writing index file reporte.idx
-(./reporte.aux
+(c:/texlive/2016/texmf-dist/tex/latex/txfonts/txfonts.sty
+Package: txfonts 2008/01/22 v3.2.1
+LaTeX Font Info:    Redeclaring symbol font `operators' on input line 21.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
+(Font)                  OT1/cmr/m/n --> OT1/txr/m/n on input line 21.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
+(Font)                  OT1/cmr/bx/n --> OT1/txr/m/n on input line 21.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
+(Font)                  OT1/txr/m/n --> OT1/txr/bx/n on input line 22.
+\symitalic=\mathgroup9
+LaTeX Font Info:    Overwriting symbol font `italic' in version `bold'
+(Font)                  OT1/txr/m/it --> OT1/txr/bx/it on input line 26.
+LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 29.
+LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 30.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
+(Font)                  OT1/cmr/m/it --> OT1/txr/m/it on input line 30.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
+(Font)                  OT1/cmr/bx/it --> OT1/txr/m/it on input line 30.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
+(Font)                  OT1/txr/m/it --> OT1/txr/bx/it on input line 31.
+LaTeX Font Info:    Redeclaring math alphabet \mathsf on input line 40.
+LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
+(Font)                  OT1/cmss/m/n --> OT1/txss/m/n on input line 40.
+LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
+(Font)                  OT1/cmss/bx/n --> OT1/txss/m/n on input line 40.
+LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
+(Font)                  OT1/txss/m/n --> OT1/txss/b/n on input line 41.
+LaTeX Font Info:    Redeclaring math alphabet \mathtt on input line 50.
+LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
+(Font)                  OT1/cmtt/m/n --> OT1/txtt/m/n on input line 50.
+LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
+(Font)                  OT1/cmtt/m/n --> OT1/txtt/m/n on input line 50.
+LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
+(Font)                  OT1/txtt/m/n --> OT1/txtt/b/n on input line 51.
+LaTeX Font Info:    Redeclaring symbol font `letters' on input line 58.
+LaTeX Font Info:    Overwriting symbol font `letters' in version `normal'
+(Font)                  OML/cmm/m/it --> OML/txmi/m/it on input line 58.
+LaTeX Font Info:    Overwriting symbol font `letters' in version `bold'
+(Font)                  OML/cmm/b/it --> OML/txmi/m/it on input line 58.
+LaTeX Font Info:    Overwriting symbol font `letters' in version `bold'
+(Font)                  OML/txmi/m/it --> OML/txmi/bx/it on input line 59.
+\symlettersA=\mathgroup10
+LaTeX Font Info:    Overwriting symbol font `lettersA' in version `bold'
+(Font)                  U/txmia/m/it --> U/txmia/bx/it on input line 67.
+LaTeX Font Info:    Redeclaring math alphabet \mathfrak on input line 70.
+LaTeX Font Info:    Redeclaring symbol font `symbols' on input line 77.
+LaTeX Font Info:    Overwriting symbol font `symbols' in version `normal'
+(Font)                  OMS/cmsy/m/n --> OMS/txsy/m/n on input line 77.
+LaTeX Font Info:    Overwriting symbol font `symbols' in version `bold'
+(Font)                  OMS/cmsy/b/n --> OMS/txsy/m/n on input line 77.
+LaTeX Font Info:    Overwriting symbol font `symbols' in version `bold'
+(Font)                  OMS/txsy/m/n --> OMS/txsy/bx/n on input line 78.
+LaTeX Font Info:    Redeclaring symbol font `AMSa' on input line 93.
+LaTeX Font Info:    Overwriting symbol font `AMSa' in version `normal'
+(Font)                  U/msa/m/n --> U/txsya/m/n on input line 93.
+LaTeX Font Info:    Overwriting symbol font `AMSa' in version `bold'
+(Font)                  U/msa/m/n --> U/txsya/m/n on input line 93.
+LaTeX Font Info:    Overwriting symbol font `AMSa' in version `bold'
+(Font)                  U/txsya/m/n --> U/txsya/bx/n on input line 94.
+LaTeX Font Info:    Redeclaring symbol font `AMSb' on input line 102.
+LaTeX Font Info:    Overwriting symbol font `AMSb' in version `normal'
+(Font)                  U/msb/m/n --> U/txsyb/m/n on input line 102.
+LaTeX Font Info:    Overwriting symbol font `AMSb' in version `bold'
+(Font)                  U/msb/m/n --> U/txsyb/m/n on input line 102.
+LaTeX Font Info:    Overwriting symbol font `AMSb' in version `bold'
+(Font)                  U/txsyb/m/n --> U/txsyb/bx/n on input line 103.
+\symsymbolsC=\mathgroup11
+LaTeX Font Info:    Overwriting symbol font `symbolsC' in version `bold'
+(Font)                  U/txsyc/m/n --> U/txsyc/bx/n on input line 113.
+LaTeX Font Info:    Redeclaring symbol font `largesymbols' on input line 120.
+LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `normal'
+(Font)                  OMX/cmex/m/n --> OMX/txex/m/n on input line 120.
+LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `bold'
+(Font)                  OMX/cmex/m/n --> OMX/txex/m/n on input line 120.
+LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `bold'
+(Font)                  OMX/txex/m/n --> OMX/txex/bx/n on input line 121.
+\symlargesymbolsA=\mathgroup12
+LaTeX Font Info:    Overwriting symbol font `largesymbolsA' in version `bold'
+(Font)                  U/txexa/m/n --> U/txexa/bx/n on input line 129.
+LaTeX Info: Redefining \not on input line 1043.
+) (./reporte.aux
 LaTeX Info: Redefining \. on input line 22.
 LaTeX Info: Redefining \% on input line 22.
 )
 \openout1 = `reporte.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 39.
-LaTeX Font Info:    ... okay on input line 39.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 39.
-LaTeX Font Info:    ... okay on input line 39.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 39.
-LaTeX Font Info:    ... okay on input line 39.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 39.
-LaTeX Font Info:    ... okay on input line 39.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 39.
-LaTeX Font Info:    ... okay on input line 39.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 39.
-LaTeX Font Info:    ... okay on input line 39.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 39.
-LaTeX Font Info:    ... okay on input line 39.
+LaTeX Font Info:    Checking defaults for OML/txmi/m/it on input line 29.
+LaTeX Font Info:    Try loading font information for OML+txmi on input line 29.
+
+
+(c:/texlive/2016/texmf-dist/tex/latex/txfonts/omltxmi.fd
+File: omltxmi.fd 2000/12/15 v3.1
+)
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for OMS/txsy/m/n on input line 29.
+LaTeX Font Info:    Try loading font information for OMS+txsy on input line 29.
+
+
+(c:/texlive/2016/texmf-dist/tex/latex/txfonts/omstxsy.fd
+File: omstxsy.fd 2000/12/15 v3.1
+)
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for OMX/txex/m/n on input line 29.
+LaTeX Font Info:    Try loading font information for OMX+txex on input line 29.
+
+
+(c:/texlive/2016/texmf-dist/tex/latex/txfonts/omxtxex.fd
+File: omxtxex.fd 2000/12/15 v3.1
+)
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for U/txexa/m/n on input line 29.
+LaTeX Font Info:    Try loading font information for U+txexa on input line 29.
+
+(c:/texlive/2016/texmf-dist/tex/latex/txfonts/utxexa.fd
+File: utxexa.fd 2000/12/15 v3.1
+)
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Try loading font information for T1+txr on input line 29.
+
+(c:/texlive/2016/texmf-dist/tex/latex/txfonts/t1txr.fd
+File: t1txr.fd 2000/12/15 v3.1
+)
 \AtBeginShipoutBox=\box61
-Package hyperref Info: Link coloring ON on input line 39.
- (c:/texlive/2016/texmf-dist/tex/latex/hyperref/nameref.sty
+Package hyperref Info: Link coloring ON on input line 29.
+
+(c:/texlive/2016/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
 
 (c:/texlive/2016/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
@@ -913,16 +1021,16 @@ Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
 \c@section@level=\count157
 )
-LaTeX Info: Redefining \ref on input line 39.
-LaTeX Info: Redefining \pageref on input line 39.
-LaTeX Info: Redefining \nameref on input line 39.
+LaTeX Info: Redefining \ref on input line 29.
+LaTeX Info: Redefining \pageref on input line 29.
+LaTeX Info: Redefining \nameref on input line 29.
 
 (./reporte.out) (./reporte.out)
-\@outlinefile=\write4
-\openout4 = `reporte.out'.
+\@outlinefile=\write3
+\openout3 = `reporte.out'.
 
-LaTeX Info: Redefining \. on input line 39.
-LaTeX Info: Redefining \% on input line 39.
+LaTeX Info: Redefining \. on input line 29.
+LaTeX Info: Redefining \% on input line 29.
 
 (c:/texlive/2016/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
@@ -975,70 +1083,193 @@ e
 * \headsep=25.0pt
 * \topskip=12.0pt
 * \footskip=30.0pt
-* \marginparwidth=44.0pt
+* \marginparwidth=4.0pt
 * \marginparsep=10.0pt
 * \columnsep=10.0pt
 * \skip\footins=10.8pt plus 4.0pt minus 2.0pt
 * \hoffset=0.0pt
 * \voffset=0.0pt
 * \mag=1000
-* \@twocolumnfalse
+* \@twocolumntrue
 * \@twosidefalse
 * \@mparswitchfalse
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-<cimat.png, id=28, 180.675pt x 180.675pt>
-File: cimat.png Graphic file (type png)
- <use cimat.png>
-Package pdftex.def Info: cimat.png used on input line 49.
-(pdftex.def)             Requested size: 113.81206pt x 113.81206pt.
-
-Overfull \hbox (19.40726pt too wide) in paragraph at lines 49--50
- [] 
- []
-
-LaTeX Font Info:    Try loading font information for U+msa on input line 51.
-(c:/texlive/2016/texmf-dist/tex/latex/amsfonts/umsa.fd
-File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+LaTeX Font Info:    Try loading font information for OT1+txr on input line 40.
+(c:/texlive/2016/texmf-dist/tex/latex/txfonts/ot1txr.fd
+File: ot1txr.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 51.
+LaTeX Font Info:    Try loading font information for U+txsya on input line 40.
 
-(c:/texlive/2016/texmf-dist/tex/latex/amsfonts/umsb.fd
-File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+(c:/texlive/2016/texmf-dist/tex/latex/txfonts/utxsya.fd
+File: utxsya.fd 2000/12/15 v3.1
 )
-Underfull \hbox (badness 2088) in paragraph at lines 57--60
-|  []
+LaTeX Font Info:    Try loading font information for U+txsyb on input line 40.
+
+(c:/texlive/2016/texmf-dist/tex/latex/txfonts/utxsyb.fd
+File: utxsyb.fd 2000/12/15 v3.1
+)
+LaTeX Font Info:    Try loading font information for U+txmia on input line 40.
+
+(c:/texlive/2016/texmf-dist/tex/latex/txfonts/utxmia.fd
+File: utxmia.fd 2000/12/15 v3.1
+)
+LaTeX Font Info:    Try loading font information for U+txsyc on input line 40.
+
+(c:/texlive/2016/texmf-dist/tex/latex/txfonts/utxsyc.fd
+File: utxsyc.fd 2000/12/15 v3.1
+)
+Underfull \hbox (badness 2285) in paragraph at lines 46--47
+[]\T1/txr/m/n/12 Una de las ta-reas más re-le-van-tes en el
  []
 
 
-Overfull \hbox (16.83684pt too wide) in paragraph at lines 47--64
-[]$[]$ $[]$ 
+Underfull \hbox (badness 10000) in paragraph at lines 46--47
+
  []
 
-<mty.png, id=29, 284.7438pt x 275.5896pt>
-File: mty.png Graphic file (type png)
- <use mty.png>
-Package pdftex.def Info: mty.png used on input line 71.
-(pdftex.def)             Requested size: 132.29153pt x 128.0374pt.
 
-Overfull \hbox (37.88673pt too wide) in paragraph at lines 71--72
+Underfull \hbox (badness 10000) in paragraph at lines 48--49
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 50--51
+
+ []
+
+
+Underfull \hbox (badness 2165) in paragraph at lines 52--53
+[]\T1/txr/m/n/12 Los mo-de-los más so-fis-ti-ca-dos en la ac-
+ []
+
+
+Underfull \hbox (badness 4805) in paragraph at lines 52--53
+\T1/txr/m/n/12 tua-li-dad y que pue-den con-si-de-rar-se co-mo
+ []
+
+
+Underfull \hbox (badness 2065) in paragraph at lines 52--53
+\T1/txr/m/n/12 men-te uti-li-zan la es-truc-tu-ra co-no-ci-da co-mo
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 52--53
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 54--55
+
+ []
+
+
+Underfull \hbox (badness 1436) in paragraph at lines 56--57
+\T1/txr/m/n/12 la exis-ten-cia de len-guas pre-do-mi-nan-tes, por
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 56--57
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 58--59
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 60--61
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 62--63
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 64--65
+
+ []
+
+
+Underfull \vbox (badness 1342) has occurred while \output is active []
+
+ [1{c:/texlive/2016/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
+
+
+]
+Underfull \hbox (badness 2012) in paragraph at lines 69--70
+[]\T1/txr/m/n/12 Neural ma-chi-ne trans-la-tion (NMT) es el
+ []
+
+
+Underfull \hbox (badness 1496) in paragraph at lines 69--70
+\T1/txr/m/n/12 es-ta-do del ar-te en ta-reas de tra-duc-ción, ha
+ []
+
+
+Underfull \hbox (badness 4505) in paragraph at lines 69--70
+\T1/txr/m/n/12 si-do am-plia-men-te es-tu-dia-do y mues-tra un
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 69--70
+
+ []
+
+
+<images/Encoder-Decoder-Architecture-for-Neural-Machine-Translation.png, id=33,
+ 943.525pt x 481.8pt>
+File: images/Encoder-Decoder-Architecture-for-Neural-Machine-Translation.png Gr
+aphic file (type png)
+
+<use images/Encoder-Decoder-Architecture-for-Neural-Machine-Translation.png>
+Package pdftex.def Info: images/Encoder-Decoder-Architecture-for-Neural-Machine
+-Translation.png used on input line 75.
+(pdftex.def)             Requested size: 235.88066pt x 120.44969pt.
+
+Overfull \hbox (4.86505pt too wide) in paragraph at lines 75--77
  [][] 
  []
 
-[1
 
-{c:/texlive/2016/texmf-var/fonts/map/pdftex/updmap/pdftex.map} <./cimat.png> <.
-/mty.png>] (./reporte.toc
-LaTeX Info: Redefining \. on input line 1.
-LaTeX Info: Redefining \% on input line 1.
-)
-\tf@toc=\write5
-\openout5 = `reporte.toc'.
+Underfull \hbox (badness 10000) in paragraph at lines 90--91
 
- [2]
-Underfull \hbox (badness 10000) in paragraph at lines 108--109
+ []
 
+
+Underfull \hbox (badness 10000) in paragraph at lines 92--93
+
+ []
+
+[2pdfTeX warning (ext4): destination with the same identifier (name{figure.1}) 
+has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.98 \item \textbf
+                  {Pivoteo:} La idea general de este procedimiento, nace al ...
+ <./images/Encoder-Decoder-Architecture-for-Neural-Machine-Translation.png>]
+Underfull \hbox (badness 2478) in paragraph at lines 105--106
+[]\T1/txr/m/n/12 En el pre-sen-te tra-ba-jo se abor-da-rá so-lo
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 105--106
+
+ []
+
+
+Underfull \hbox (badness 1406) in paragraph at lines 110--111
+[]\T1/txr/m/n/12 La idea in-tui-ti-va del trans-fer lear-ning se
+ []
+
+
+Underfull \hbox (badness 1242) in paragraph at lines 110--111
+\T1/txr/m/n/12 mues-tra en la fi-gu-ra [][]2[][], don-de el no-do HR
  []
 
 
@@ -1051,123 +1282,69 @@ Underfull \hbox (badness 10000) in paragraph at lines 112--113
 
  []
 
+<images/transfer.png, id=42, 428.60126pt x 290.08376pt>
+File: images/transfer.png Graphic file (type png)
 
-Underfull \hbox (badness 10000) in paragraph at lines 114--115
+<use images/transfer.png>
+Package pdftex.def Info: images/transfer.png used on input line 118.
+(pdftex.def)             Requested size: 214.3001pt x 145.04152pt.
 
+Underfull \hbox (badness 3780) in paragraph at lines 123--123
+[]\T1/txr/bx/n/17.28 Descripción del con-jun-to
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 116--117
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
+ [3]
+Underfull \hbox (badness 2103) in paragraph at lines 138--139
+\T1/txr/m/n/12 (2019). A Sur-vey of Mul-ti-lin-gual Neu-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 118--119
-
+Underfull \hbox (badness 4205) in paragraph at lines 144--145
+[]\T1/txr/m/n/12 Gutierrez-Vasques, X., & Mi-jan-gos, V.
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 120--121
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 122--123
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 124--125
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 126--127
-
- []
-
-[3
-
-]
-Underfull \hbox (badness 10000) in paragraph at lines 133--134
-
- []
-
-
-<images/Encoder-Decoder-Architecture-for-Neural-Machine-Translation.png, id=58,
- 943.525pt x 481.8pt>
-File: images/Encoder-Decoder-Architecture-for-Neural-Machine-Translation.png Gr
-aphic file (type png)
-
-<use images/Encoder-Decoder-Architecture-for-Neural-Machine-Translation.png>
-Package pdftex.def Info: images/Encoder-Decoder-Architecture-for-Neural-Machine
--Translation.png used on input line 139.
-(pdftex.def)             Requested size: 471.76134pt x 240.8994pt.
-
-[4pdfTeX warning (ext4): destination with the same identifier (name{figure.1}) 
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 160.
+[4pdfTeX warning (ext4): destination with the same identifier (name{figure.2}) 
 has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.151 
-       <./images/Encoder-Decoder-Architecture-for-Neural-Machine-Translation.pn
-g>]
-Underfull \hbox (badness 10000) in paragraph at lines 154--155
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 156--157
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 168--169
-
- []
-
-[5]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 197.
- [6]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 197.
+l.160 \end{document}
+                     <./images/transfer.png (PNG copy)>]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 160.
  (./reporte.aux
 LaTeX Info: Redefining \. on input line 22.
 LaTeX Info: Redefining \% on input line 22.
 )
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 197.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 197.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 160.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 160.
+Package rerunfilecheck Info: File `reporte.out' has not changed.
+(rerunfilecheck)             Checksum: 464E7DB31553157229E127F78E6FCA8A;278.
 
 
-Package rerunfilecheck Warning: File `reporte.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
-Package rerunfilecheck Info: Checksums for `reporte.out':
-(rerunfilecheck)             Before: F12579EB83EF62468AFEB505A4F8642F;348
-(rerunfilecheck)             After:  464E7DB31553157229E127F78E6FCA8A;278.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 197.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 160.
  ) 
 Here is how much of TeX's memory you used:
- 12352 strings out of 493013
- 177016 string characters out of 6136993
- 341715 words of memory out of 5000000
- 15631 multiletter control sequences out of 15000+600000
- 15498 words of font info for 47 fonts, out of 8000000 for 9000
+ 12888 strings out of 493013
+ 183725 string characters out of 6136993
+ 345761 words of memory out of 5000000
+ 16131 multiletter control sequences out of 15000+600000
+ 49841 words of font info for 113 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 46i,7n,37p,1996b,402s stack positions out of 5000i,500n,10000p,200000b,80000s
-pdfTeX warning (dest): name{subsection.2.1} has been referenced but does not 
-exist, replaced by a fixed one
-
-{c:/texlive/2016/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}<c:/texliv
-e/2016/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb><c:/texlive/2016/tex
-mf-dist/fonts/type1/public/cm-super/sfbx1728.pfb><c:/texlive/2016/texmf-dist/fo
-nts/type1/public/cm-super/sfcc1200.pfb><c:/texlive/2016/texmf-dist/fonts/type1/
-public/cm-super/sfrm1200.pfb><c:/texlive/2016/texmf-dist/fonts/type1/public/cm-
-super/sfti1200.pfb>
-Output written on reporte.pdf (6 pages, 249747 bytes).
+ 46i,8n,37p,1996b,454s stack positions out of 5000i,500n,10000p,200000b,80000s
+{c:/texlive/2016/texmf-dist/fonts/enc/dvips/base/8r.enc}<c:/texlive/2016/texm
+f-dist/fonts/type1/urw/times/utmb8a.pfb><c:/texlive/2016/texmf-dist/fonts/type1
+/urw/times/utmr8a.pfb><c:/texlive/2016/texmf-dist/fonts/type1/urw/times/utmri8a
+.pfb>
+Output written on reporte.pdf (4 pages, 182410 bytes).
 PDF statistics:
- 103 PDF objects out of 1000 (max. 8388607)
- 84 compressed objects within 1 object stream
- 20 named destinations out of 1000 (max. 500000)
- 64 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 81 PDF objects out of 1000 (max. 8388607)
+ 68 compressed objects within 1 object stream
+ 22 named destinations out of 1000 (max. 500000)
+ 51 words of extra memory for PDF output out of 10000 (max. 10000000)
 
